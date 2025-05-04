@@ -11,10 +11,9 @@ logging.basicConfig()
 
 from browser_use import Agent, Browser, BrowserConfig
 from browser_use.browser.context import BrowserContext, BrowserContextConfig
+from custom_agent import ChatGoogleGenerativeAI
 from langchain_core.callbacks import BaseCallbackHandler, CallbackManager
-
-from .custom_agent import ChatGoogleGenerativeAI
-from .preprocessor import PreprocessLLM
+from preprocessor import PreprocessLLM
 
 warnings.filterwarnings("ignore")
 

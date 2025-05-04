@@ -26,6 +26,7 @@ import google.api_core
 
 # TODO: remove ignore once the google package is published with types
 import proto  # type: ignore[import]
+from custom_client import CustomAsyncClient, CustomClient
 from google.ai.generativelanguage_v1beta import (
     GenerativeServiceAsyncClient as v1betaGenerativeServiceAsyncClient,
 )
@@ -109,8 +110,6 @@ from tenacity import (
     wait_exponential,
 )
 from typing_extensions import Self, is_typeddict
-
-from .custom_client import CustomAsyncClient, CustomClient
 
 WARNED_STRUCTURED_OUTPUT_JSON_MODE = False
 
