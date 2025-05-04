@@ -1,0 +1,9 @@
+[index]
+
+description = "Custom Browser Use tool"
+
+tools = [
+    "browser_tools.run_browser_agent",
+    "browser_tools.stream_browser_agent",
+    "browser_tools.stream_browser_agent_gui",
+]
